@@ -22,8 +22,9 @@ const (
 )
 
 type Error struct {
-	code   int
+	code   ErrorStatus
 	status string
+	e error
 }
 
 func (e Error) Error() string {
